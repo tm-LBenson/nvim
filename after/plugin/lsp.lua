@@ -7,7 +7,7 @@ mason.setup()
 
 -- Setup mason-lspconfig
 mason_lspconfig.setup{
-  ensure_installed = { 'tsserver', 'gopls', 'eslint' },
+  ensure_installed = { 'tsserver', 'gopls', 'eslint','pyright', 'pylsp' },
 }
 
 -- Capabilities from nvim-cmp

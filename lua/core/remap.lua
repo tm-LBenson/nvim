@@ -37,3 +37,7 @@ vim.keymap.set("n", "<leader>mo", "<Plug>(VM-Toggle-Mappings)", { desc = "Toggle
 -- Prettier
 vim.api.nvim_set_keymap('n', '<leader>f', ':lua vim.lsp.buf.format({ async = true })<CR>', { noremap = true, silent = true })
 
+
+-- ToggleTerminal
+vim.api.nvim_set_keymap('n', '<leader>t', '<cmd>lua ToggleTerminal()<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('t', '<Esc>', [[<C-\><C-n>]], {noremap = true, silent = true})
